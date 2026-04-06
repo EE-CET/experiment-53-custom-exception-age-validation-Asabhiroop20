@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Under 18 (Exception Case)",
+      "setup": "javac src/CustomException.java",
+      "run": "java -cp src CustomException",
+      "input": "15",
+      "output": "Exception: Not eligible to vote",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "18 or Over (Valid Case)",
+      "setup": "javac src/CustomException.java",
+      "run": "java -cp src CustomException",
+      "input": "18",
+      "output": "Eligible to vote",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}
